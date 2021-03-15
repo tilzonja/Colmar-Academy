@@ -1,0 +1,512 @@
+html {
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+@media only screen and (max-width: 760px) {
+    main {
+        top: 64px;
+    }
+}
+
+
+/* Header */
+
+header {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    border-bottom: 1px solid white;
+    background-color: white;
+    top: 0;
+    height: 64px;
+}
+
+header .mobile {
+    display: none;
+}
+
+header p {
+    padding-left: 1.5rem;
+    float: left;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: silver;
+    margin: 0;
+}
+header b  {
+    color:rgb(70, 70, 70);    
+}
+
+header nav ul {
+    list-style-type: none;
+    text-align: right;
+    padding-right: 1.5rem;    
+    }
+
+nav li {
+    display: inline;    
+    padding: 0 1rem;    
+}
+
+header a {    
+    text-decoration: none;
+    color: black;
+    font-size: 1.25rem;
+}
+
+@media only screen and (max-width: 760px) {
+    header .desktop {
+        display: none;
+    }
+    header .mobile {
+        display: flex;
+        width: 100%;
+        height: 4rem;
+        
+    }
+    header .mobile li {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+
+/* Main content */
+
+
+/* Section 1 */
+
+.learn {
+    background-color: rgb(202, 202, 202);
+    margin: 0 auto;
+    display: flex;
+}
+
+.banner {
+    width: 60%;
+    height: auto;
+    flex-flow: wrap row;
+    margin: 2rem 1.5rem;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.content-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 380px;
+    margin-left: 1.5rem;
+}
+
+.content-text h1 {
+    color:rgb(70, 70, 70);
+    font-size: 3rem;
+    font-weight: 900;    
+}
+
+.content-text h3 {
+    color:rgb(70, 70, 70);
+    font-size: 2rem; 
+}
+
+.content-text input {
+    text-align: center;
+    background-color: #4a4a4a;
+    color: white;
+    padding: 8px 0;
+    max-width: 230px;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+  }
+
+  @media only screen and (max-width: 760px) {
+      .learn {
+          width: 100%;
+          display: block;
+          top: 64px;
+          position: relative;
+      }
+
+      .banner {
+          width: 100%;
+          background-size: cover;
+          margin: 0;
+      }
+
+      .banner img {
+          width: 100%;
+      }
+
+      .content-text {
+          margin-left: 1rem;
+      }
+
+      .content-text h1 {
+          font-size: 2.5rem;
+          margin: 2rem 0;
+      }
+
+      .content-text h3 {
+          font-size: 1.5rem;
+      }
+
+      .content-text input {
+          background-color: rgba(138, 138, 138, 0.712);
+          max-width: 480px;
+          margin-top: 1.5rem;
+          margin-bottom: 2rem;
+          margin-left: 3rem;
+      }
+  }
+
+
+/* Section 2 */
+
+.information {
+    display: inline-flex;
+}
+
+.container-1 {
+    width: 60%; 
+    padding: 2rem 1.5rem;
+}
+
+.container-1 img {     
+    width: 100%;  
+}
+
+.content-1 {
+    text-align: center;    
+}
+
+.content-1 h1 {
+    color:rgb(70, 70, 70);
+    font-size: 3rem;
+    font-weight: 900;  
+}
+
+.content-1 p,span {
+    color:rgb(70, 70, 70);
+}
+
+.container-2 {
+    width: 40%;
+    margin-top: 1.5rem;
+    border-left: 1px solid grey;
+}
+
+.chapter {
+    display: flex;
+}
+
+.chapter:first-child {
+    border-bottom: 1px solid rgb(177, 173, 173);
+}
+
+.chapter:nth-child(2) {
+    border-top: 1px solid rgb(177, 173, 173);
+}
+
+.chapter:nth-child(3) {
+    background-color: #c4baba;
+}
+
+.image {
+    width: 35%;
+    margin: 1rem 1rem;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+}
+
+.chapter .text {
+    width: auto;
+    margin: auto 0;
+    line-height: 25px;
+}
+
+.text a {
+    text-decoration: none;
+    color: blue;
+}
+
+.mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 760px) {
+    .container-1 {
+        display: none;
+    }
+
+    .container-2 {
+        width: 100%;
+        border: none;
+        margin-top: 1rem;
+        position: relative;
+        top: 64px;
+    }
+
+    .chapter {
+        display: inline-block;
+        margin-left: 1rem;
+    }
+
+    .chapter:first-child {
+        border: none;
+    }
+    
+    .chapter:nth-child(2) {
+        border: none;
+    }
+
+    .chapter:nth-child(3) {
+        background-color: white;
+    }
+
+    .image {
+        width: 90%;
+    }
+
+    .chapter .text {
+        margin-left: 2rem;
+        margin-bottom: 4rem;
+    }
+}
+
+/* Section 3 */
+
+.course {
+    padding: 32px 72px;
+    background-color: rgb(236, 236, 236);
+    margin: auto;
+}
+
+.course h1 {
+    text-align: center;
+    color: rgb(70, 70, 70);
+    font-size: 66px;
+}
+
+.flexflex {    
+    display: grid;
+    grid-gap: 32px;
+    grid-template-columns: 420px 420px 420px;
+    padding-top: 32px;
+}
+
+.description {
+    background-color: white;
+}
+
+.description img {
+    width: 420px;
+    height: auto;
+}
+
+.description h2 {
+    color: rgb(70, 70, 70);
+    font-weight: bold;
+    padding-top: 16px;
+}
+
+.description p {
+    color: rgb(70, 70, 70);
+    padding-bottom: 24px;
+}
+
+.description span {
+    color: rgb(70, 70, 70);
+    padding: 8px 0;
+}
+
+.desc-text {
+    padding-left: 16px;
+    padding-top: 16px;
+}
+
+@media only screen and (max-width: 760px) {
+    .course {
+        margin: 2rem 0 2rem 0;
+        border-top: 1px solid rgb(70, 70, 70);
+        padding: 0;
+        position: relative;
+        top: 64px;
+    }
+
+    .course h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .flexflex {
+        display: none;
+    }
+
+    .course .mobile {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1rem;
+        justify-content: space-around;
+    }
+
+    .course input {
+        text-align: left;
+        background-color: rgb(219, 219, 219);
+        color: rgb(70, 70, 70);
+        padding: 1rem 0 1.5rem 1rem;
+        max-width: 440px;
+        border: none;
+        cursor: pointer;
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+        font-style: italic;
+    }
+}
+
+/* Section 4 */
+
+.thesis-exhibit {
+    background-color: rgb(219, 219, 219);
+    border-bottom: 1px solid rgb(202, 199, 199);
+}
+
+.thesis-exhibit
+h1 {
+    text-align: center;
+    color: rgb(70, 70, 70);
+    font-size: 3rem;
+    padding: 2rem 0;
+    margin: 0;
+}
+
+.exhibit-main {
+    display: flex;
+    width: 100%;
+}
+
+.left {
+    width: 60%;
+    margin: auto 1.5rem;
+  }
+
+  .left h1 {
+      margin: 1.5rem 0 0.5rem 0;
+  }
+
+  .left p {
+      margin-bottom: 2rem;
+  }
+
+  video {
+      width: 100%;
+      object-fit: contain;
+  }
+
+  .right {
+      width: 40%;
+  }
+
+  article {
+      display: flex;
+      align-items: center;
+  }
+
+  article:first-child {
+      background-color: rgb(180, 180, 180);
+  }
+
+  article img {
+      width: 65%;
+      padding: 1rem;
+  }
+
+  article > div {
+      width: 65%;
+  }
+
+  @media only screen and (max-width: 760px) {
+      .thesis-exhibit {
+          margin-top: 2rem;
+          top: 64px;
+          position: relative;
+          border-top: 1px solid gray;
+      }
+
+      .right {
+          display: none;
+      }
+
+      .left h2 {
+          display: none;
+      }
+
+      .left p {
+          display: none;
+      }
+
+      .left {
+          width: 100%;
+          margin: 0;
+      }
+
+      video {
+          width: 100%;
+          margin: 1rem 0 1.5rem 0;
+      }
+  }
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem auto 2rem 1.5rem;
+}
+
+.foot.nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer span {
+    margin-right: 1.5rem;
+}
+
+footer i {
+    position: relative;
+    display: inline-flex;
+}
+
+footer p {
+    display: inline;
+}
+
+@media only screen and (max-width: 760px) {
+    footer {
+        position: relative;
+        top: 64px;
+        margin-top: 1.5rem;
+    }
+    .foot.nav {
+        display: none;
+    }
+
+    footer p {
+        padding: 1rem 0 1rem 0;
+        font-size: 1.25rem;
+    }
+}
